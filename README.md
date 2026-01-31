@@ -42,10 +42,10 @@ The following stages were successfully completed:
 ![Synthesis Floorplan Placement](01_synthesis_floorplan_placement.png)
 
 ### 2. Routing Stage
-![Routing Stage](Routing stage.png)
+![Routing Stage](Routing_stage.png)
 
 ### 3. Final Layout View (OpenROAD)
-![OpenROAD Layout](OpenROAD layout.png)
+![OpenROAD Layout](OpenROAD_layout.png)
 
 ---
 
