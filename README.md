@@ -12,7 +12,7 @@ The objective of this project is to understand and execute the complete RTL-to-l
 - **ISA**: RISC-V (RV32I)
 - **RTL Source**: picoRV32 open-source repository
 - **Technology Node**: SKY130 (130nm)
-- **Design Flow**: RTL → GDS (up to routing stage)
+- **Design Flow**: RTL → GDS 
 
 ---
 
