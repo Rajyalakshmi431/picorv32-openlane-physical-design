@@ -1,34 +1,36 @@
-# PicoRV32 Physical Design using OpenLane (Sky130)
+# picorv32 OpenLane Physical Design (SKY130)
 
-## 📌 Project Overview
+## 📖 Project Overview
 
-This project demonstrates the complete RTL-to-GDSII physical design flow of the PicoRV32 RISC-V core using the OpenLane ASIC flow with the Sky130 PDK.
+This project demonstrates the complete RTL-to-GDSII physical design flow of the **picorv32 RISC-V core** using the OpenLane automated ASIC flow with the SKY130 PDK.
 
-The design was taken from RTL, synthesized, floorplanned, placed, clock-tree synthesized, routed, and taken through full signoff to generate the final GDSII layout.
+The design flow includes synthesis, floorplanning, placement, clock tree synthesis (CTS), routing, signoff checks (DRC/LVS), and final GDSII generation.
+
+This project was implemented to understand the full ASIC physical design flow and OpenLane toolchain in a practical environment.
 
 ---
 
-## 🛠️ Tools Used
+## 🛠 Tools & Technology Used
 
-- OpenLane
+- OpenLane Flow
 - OpenROAD
-- Magic
-- KLayout
-- Sky130 PDK
+- Yosys (Synthesis)
+- Magic (DRC & Layout View)
+- KLayout (GDSII Viewer)
+- SKY130 PDK
+- Ubuntu (WSL Environment)
 
 ---
 
-## 🔄 Design Flow
+## 🚀 Design Flow Stages
 
-The following stages were completed:
-
-1. RTL Synthesis
-2. Floorplanning
-3. Placement
-4. Clock Tree Synthesis (CTS)
-5. Routing
-6. Signoff (DRC/LVS)
-7. GDSII Generation
+1. RTL Synthesis  
+2. Floorplanning  
+3. Placement  
+4. Clock Tree Synthesis (CTS)  
+5. Routing  
+6. Signoff (DRC/LVS)  
+7. GDSII Generation  
 
 ---
 
@@ -36,54 +38,70 @@ The following stages were completed:
 picorv32-openlane-physical-design/
 │
 ├── rtl/
-│   └── picorv32.v
+│   └── picorv32.v                 # RTL source file
 │
 ├── gds/
-│   ├── picorv32.gds
-│   ├── picorv32.lib
-│   ├── picorv32.lyp
-│   └── picorv32.sdf
+│   ├── picorv32.klayout.gds       # Final GDSII layout
+│   ├── picorv32.sdf               # Post-layout timing file
+│   ├── picorv32.lib               # Timing library file
+│   └── picorv32.lyp               # KLayout layer properties
 │
 ├── reports/
-│   └── timing_summary.txt   (we will create this cleanly)
+│   └── timing_summary.txt         # Extracted timing report summary
 │
 ├── docs/
 │   ├── 01_synthesis_floorplan_placement.png
 │   ├── 02_routing_stage.png
 │   └── 03_final_gds_layout.png
 │
-├── config.json
+├── config.json                    # OpenLane configuration file
 │
-└── README.md
+└── README.md                      # Project documentation
 ---
 
-## 📊 Results Summary
+## 📊 Flow Stage Results
 
-- Technology Node: Sky130 (130nm)
-- Flow: OpenLane RTL-to-GDSII
-- Signoff: Completed
-- Final GDS generated successfully
-
----
-
-## 🖼️ Design Screenshots
-
-### Synthesis, Floorplan & Placement
+### 1️⃣ Synthesis, Floorplan & Placement
 ![Synthesis Floorplan Placement](docs/01_synthesis_floorplan_placement.png)
 
-### Routing Stage
-![Routing Stage](docs/routing_stage.png)
+---
 
-### Final GDS Layout
-![GDS Layout](docs/gds_layout.png)
+### 2️⃣ Routing Stage
+![Routing Stage](docs/02_routing_stage.png)
 
 ---
 
-## 🎯 Conclusion
+### 3️⃣ Final GDSII Layout
+![Final GDS Layout](docs/03_final_gds_layout.png)
 
-This project demonstrates hands-on experience with the complete ASIC physical design flow using industry-standard open-source tools.
+---
 
-It includes RTL analysis, timing verification, physical implementation, and final GDSII generation.
+## ✅ Signoff Summary
+
+- Synthesis: Completed Successfully  
+- Floorplanning: Completed Successfully  
+- Placement: Completed Successfully  
+- CTS: Completed Successfully  
+- Routing: Completed Successfully  
+- DRC: Clean  
+- LVS: Clean  
+- Final GDSII: Generated Successfully  
+
+---
+
+## 🎯 Learning Outcomes
+
+- Understood complete RTL-to-GDSII ASIC flow
+- Learned OpenLane automation flow
+- Analyzed synthesis, timing, and routing reports
+- Generated final GDSII layout using SKY130 PDK
+- Performed signoff verification checks
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates a full ASIC physical design implementation of a RISC-V core using open-source tools and PDK. It provides hands-on exposure to real physical design stages used in the semiconductor industry.
 
 ---
 
