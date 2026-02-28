@@ -1,0 +1,12 @@
+Final Signoff Summary – picorv32 (OpenLane SKY130)
+
+Synthesis  : Completed Successfully
+Floorplan  : Completed Successfully
+Placement  : Completed Successfully
+CTS        : Completed Successfully
+Routing    : Completed Successfully
+DRC        : No errors
+LVS        : Clean
+GDSII      : Generated Successfully
+
+All design stages completed without critical errors.
